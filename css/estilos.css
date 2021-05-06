@@ -1,0 +1,125 @@
+/*formatação geral da pagina*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'verdana', monospace;
+    font-size: 100%;
+}
+
+/*formatação da barra de menu.*/
+
+#navegacao_principal{
+    position: relative;
+    font-family: monospace;
+    float: left;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+}
+
+#menu_principal{
+    list-style-type: none;
+    padding-left: 0%;
+    width: 100%;
+    display: block;
+    }
+
+*#menu_principal li.foco{
+    background-color:#aa9a0c;
+    color: #111010;
+}
+
+#menu_principal li{
+    float: left;
+    display: block;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0s;
+    background-color: #000000;
+    
+}
+
+#menu_principal li a{
+    color: #d6c1c1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+#menu_principal li a:hover {
+    color: rgb(2, 10, 10);
+}
+
+/*formatação do menu dropdown*/
+
+.dropdonw{
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+    box-shadow: 0px 8px 16px 0px #232324;
+}
+
+.dropdonw li{
+    clear: both;
+    width: 100%;
+}
+
+#menu_principal li:hover,
+#menu_principal li:focus-within{
+    background-color:#aa9a0c;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#menu_principal li a:hover{
+    color: #030000;
+}
+
+/*controle da exibição do dropdown*/
+#menu_principal li:hover>ul,
+#menu_principal li:focus-within>ul,
+.dropdonw ul:hover,
+.dropdonw ul:focus{
+    visibility: visible;
+    opacity: 1;
+    display:block;
+}
+
+
+/*formatação do tag article onde todo o conteudo da página se encontra*/
+article {
+    padding: 5px;
+    margin: 100px 250px 40px 150px;
+    height: 1450px;
+}
+
+/*formatação dos parágrafos*/
+p{
+    text-align:justify;
+
+}
+
+/*formtação do título e subtitulos*/
+.titulo {
+    font-size: 28px;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+}
+
+.subtitulo {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
+}

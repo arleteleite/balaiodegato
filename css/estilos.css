@@ -102,7 +102,7 @@ body{
 article {
     padding: 5px;
     margin: 100px 250px 40px 150px;
-    height: 1450px;
+    /*height: 1450px;*/
 }
 
 /*formatação dos parágrafos*/
@@ -122,4 +122,8 @@ p{
     font-size: 24px;
     font-weight: bold;
     border-bottom: 1px solid #000000;
+}
+
+p{
+    margin: 10px 0px;
 }
